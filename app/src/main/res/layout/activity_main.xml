@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/coffee2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+
+            <EditText
+                android:id="@+id/plain_text_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header0"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+
+            <CheckBox
+                android:id="@+id/checkWhipped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/paddingcheck"
+                android:text="@string/first"
+                android:textSize="@dimen/textSize" />
+
+            <CheckBox
+                android:id="@+id/checkChocolate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/paddingcheck"
+                android:text="@string/second"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header1"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="@dimen/ButtonSize"
+                    android:layout_height="@dimen/ButtonSize"
+                    android:onClick="decrement"
+                    android:text="-"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:id="@+id/quantity_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/buttonMargin"
+                    android:layout_marginRight="@dimen/buttonMargin"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <Button
+                    android:layout_width="@dimen/ButtonSize"
+                    android:layout_height="@dimen/ButtonSize"
+                    android:onClick="increment"
+                    android:text="+"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header2"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_summary_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/Margin"
+                android:layout_marginTop="@dimen/Margin"
+                android:background="@android:drawable/edit_text"
+                android:text="@string/defaultPrice"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="submitOrder"
+                    android:text="@string/Button1"
+                    android:textSize="@dimen/textSize" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sendOrder"
+                    android:text="@string/Button3"
+                    android:textSize="@dimen/textSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/Margin"
+            android:onClick="Resetorder"
+            android:text="@string/Button2"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/Margin"
+            android:layout_marginRight="@dimen/Margin"
+            android:background="@android:color/background_dark"
+            android:text="0"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/Margin"
+            android:layout_marginRight="@dimen/Margin"
+            android:layout_toLeftOf="@id/counter"
+            android:text="@string/History"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</ScrollView>

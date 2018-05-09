@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">JustJava</string>
+    <string name="header1">Quantity</string>
+    <string name="header0">Toppings</string>
+    <string name="first">Whipped Cream</string>
+    <string name="second">Chocolate</string>
+    <string name="hint">Name</string>
+    <string name="header2">order summary</string>
+    <string name="decrementlessThan0">No negative coffees</string>
+    <string name="lessThan0">Don\'t want any coffee??</string>
+    <string name="moreThan100">Can\'t give so much coffee!!Sorry</string>
+    <string name="defaultPrice"> 0.00</string>
+    <string name="Button1">Bill</string>
+    <string name="Button2">New Order</string>
+    <string name="Button3">Send Order</string>
+    <string name="History">Customers Served:  </string>
+    <string name="priceMessage">Name: %1$s  \nTotal: %2$s for %3$d coffee \nWhipped cream? %4$b  \nChocolate? %5$b  \nThank you! Enjoy your coffee!  \nNext Person Please!!</string>
+    <string name="sendOrder">Name: %1$s \nTotal: %2$s for %3$d coffee\nWhipped cream? %4$b \nChocolate? %5$b \n</string>
+    <string name="warning">Don\'t want any coffee?</string>
+    <string name="address">mailto:xyz@gmail.com</string>
+    <string name="subject">Coffee Order no:</string>
+</resources>

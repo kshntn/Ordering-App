@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JustJava</string>
+    <string name="header1">Menge</string>
+    <string name="header0">Topping</string>
+    <string name="second">Schokolade</string>
+    <string name="first">Schlagsahne</string>
+    <string name="hint">Name</string>
+    <string name="header2">Bestellübersicht</string>
+    <string name="decrementlessThan0">Kein negativer Kaffee</string>
+    <string name="lessThan0">Willst du keinen Kaffee?</string>
+    <string name="moreThan100">Kann nicht so viel Kaffee geben !! Entschuldigung</string>
+    <string name="defaultPrice">0.00</string>
+    <string name="Button1">Rechnung</string>
+    <string name="Button2">"Neue Bestellung "</string>
+    <string name="Button3">Bestellung abschicken</string>
+    <string name="History">Kunden bedient:</string>
+    <string name="warning">Willst du keinen Kaffee?</string>
+    <string name="subject">"Kaffee Bestellnr .: "</string>
+    <string name="priceMessage">Name:%1$s \nGesamt: %2$s für %3$d kaffee \nSchlagsahne? %4$b \nSchokolade? %5$b \nDanke! Genieß deinen Kaffee! \nNächste Person Bitte !!</string>
+    <string name="sendOrder">Name:%1$s \nGesamt: %2$s für %3$d kaffee \nSchlagsahne? %4$b \nSchokolade? %5$b</string>
+    <string name="address">mailto:xyz@gmail.com</string>
+</resources>
